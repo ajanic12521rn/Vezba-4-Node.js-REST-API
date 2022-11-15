@@ -13,7 +13,7 @@ app.get("/", (req,res) => {
 });
 
 //Ukljucujemo skript u kome su handleri za rute /student/...
-const studentRoutes = require("./routes/students.js");
+const studentRoutes = require("./routes/student.js");
 app.use("/student", studentRoutes);
 
 //Ovde treba da ukljucimo handlere za rute /smer/...
