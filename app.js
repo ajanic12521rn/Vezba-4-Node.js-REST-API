@@ -17,7 +17,8 @@ const studentRoutes = require("./routes/student.js");
 app.use("/student", studentRoutes);
 
 //Ovde treba da ukljucimo handlere za rute /smer/...
-//...
+const smerRoutes = require("./routes/smer.js");
+app.use("/smer", smerRoutes);
 
 //Pokrecemo http server na portu 8000
 app.listen({ port:8000 }, async () => {
